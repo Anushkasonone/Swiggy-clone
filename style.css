@@ -1,0 +1,361 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    font-size: medium;
+}
+
+body {
+    color: #1b000015;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #f05b05;
+    /* Swiggy orange */
+    color: rgb(194, 36, 36);
+
+}
+
+.logo img {
+    width: 150px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffe0c2;
+}
+
+/* Sign-in button */
+._3chg9 {
+    background: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+._5-C04 {
+    color: #fc8019;
+    font-weight: 600;
+}
+
+/* Container to align buttons side by side */
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Base button style */
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* White outline button */
+.btn-outline {
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: orange;
+}
+
+/* Solid black button */
+.btn-solid {
+    background: #000;
+    color: #f0e5e5;
+    border: 2px solid #000;
+}
+
+
+
+/* HERO SECTION */
+/* Main Section */
+main {
+    text-align: center;
+    background-color: #f05b05
+        /* solid orange background */
+}
+
+.text-container {
+    margin-top: -150px;
+    /* moves text upward */
+}
+
+main section:first-child {
+    height: 80vh;
+    background-image: url("/img/Sushi_replace.png"), url("/img/Veggies_new.png");
+    background-position: right center, left center;
+    background-size: 250px, 250px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* Overlay */
+main section:first-child::before {
+    content: "";
+    position: absolute;
+
+}
+
+main section:first-child img,
+main section:first-child div,
+main section:first-child input {
+    z-index: 0;
+}
+
+/* Heading */
+main section:first-child div {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    max-width: 800px;
+}
+
+/* Search bar */
+.input-container {
+    display: flex;
+    gap: 15px;
+    /* spacing between inputs */
+    margin-top: 20px;
+}
+
+.location-input {
+    width: 270px;
+    /* smaller box */
+    height: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 17px;
+}
+
+.search-input {
+    width: 470px;
+    /* smaller box */
+    height: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 17px;
+}
+
+
+/* SECOND SECTION (INFO) */
+main section:last-child {
+    padding: 60px 10%;
+    display: grid;
+
+}
+
+.image-row {
+    display: flex;
+    /* puts images in a row */
+    justify-content: center;
+    /* centers them horizontally */
+    align-items: center;
+    gap: 0px;
+    /* spacing between images */
+    padding: 0px;
+    max-height: 1cm;
+    margin-top: 65px;
+    /* optional: adds breathing space */
+}
+
+.image-row img {
+    background: transparent;
+    /* ensures no extra white behind images */
+    border: none;
+    max-width: 350px;
+    /* optional sizing */
+    height: auto;
+    margin-top: -250px;
+}
+
+/* Cards */
+main section:last-child div {
+    background: #fff5ec;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+main section:last-child div:hover {
+    transform: translateY(-8px);
+}
+
+/* Card heading */
+main section:last-child h3 {
+    margin-bottom: 10px;
+    color: #f6f2ef;
+}
+
+/* Card text */
+main section:last-child p {
+    font-size: 14px;
+    color: #f9f2f0;
+}
+
+.container {
+    color: #000;
+    font-size: 14px;
+}
+
+/* Container */
+.row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* 10 columns */
+    grid-template-rows: repeat(2, auto);
+    /* 2 rows */
+    gap: 5px;
+    padding: 20px 40px;
+}
+
+/* Card Button */
+.sc-etVdmn {
+    width: 100%;
+    height: 160px;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f6f4f4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.sc-etVdmn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(246, 244, 244, 0.15);
+}
+
+/* Image */
+.sc-etVdmn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Remove extra margin */
+.sc-ijanKN {
+    margin-right: 0 !important;
+}
+
+.row {
+    font-size: 14px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    font-family: Gilroy, arial, Helvetica Neue, sans-serif;
+    letter-spacing: 0;
+    font-weight: 200;
+    color: #02060c;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    display: flex;
+    padding-top: 0px;
+}
+
+.sc-sLsrZ jXypxf {
+    font-size: 14px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    font-family: Gilroy, arial, Helvetica Neue, sans-serif;
+    letter-spacing: 0;
+    font-weight: 200;
+    color: #02060c;
+    margin: 5x;
+    padding: 0;
+    box-sizing: inherit;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 0px;
+    gap: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    main section:first-child input {
+        width: 80%;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
